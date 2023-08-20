@@ -51,7 +51,7 @@ class LoginViewC: UIViewController {
     // MARK: - ACTIONS
     // TODO: BUTTON OTP SEND TAPPED
     @IBAction func buttonSend_OTP_Tapped(_ sender: Any) {
-       /* if self.validateFields().isEmpty{
+        if self.validateFields().isEmpty{
             print("SEND OTP...!")
             guard let vc = UIStoryboard(name: "Auth", bundle: nil).instantiateViewController(withIdentifier: "OTPViewController") as? OTPViewController else {return}
             vc.countryCode = self.countryCode
@@ -61,12 +61,7 @@ class LoginViewC: UIViewController {
             Alearts.shared.showAlertWithOkButton(view: self, title: AppText.shared.errorText, message: self.validateFields(), buttonTitle: AppText.shared.oKText) { [weak self] in
                 guard self != nil else {return}
             }
-        } */
-        
-        
-        let vc = UploadGSTViewC()
-        self.navigationController?.pushViewController(vc, animated: true)
-        
+        }
     }
     
     
