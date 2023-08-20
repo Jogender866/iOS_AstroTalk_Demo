@@ -15,7 +15,7 @@ class OTPViewController: UIViewController {
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var labelResendOTPTitle: UILabel!
     @IBOutlet weak var viewResendOTPButtonContainer: UIView!
-    @IBOutlet weak var viewCircularProgress: UIView!
+    @IBOutlet weak var progressRing: ALProgressRing!
     
     
     // MARK: - PROPERTIES
@@ -55,7 +55,7 @@ class OTPViewController: UIViewController {
     // TODO: BUTTON RESEND OTP TAPPED
     @IBAction func buttonResend_OTP_Tapped(_ sender: UIButton) {
         self.viewResendOTPButtonContainer.isHidden = true
-        self.viewCircularProgress.isHidden = false
+        self.progressRing.isHidden = false
         self.timerCount = 60
         self.labelResendOTPTitle.text = "\(AppText.shared.resendOTPAvailableIn) \(self.timerCount) \(AppText.shared.s)"
         self.start_Timer60SecResendOTP()
@@ -67,14 +67,19 @@ class OTPViewController: UIViewController {
         if self.timerCount > 1{
             self.timerCount -= 1
             self.viewResendOTPButtonContainer.isHidden = true
-            self.viewCircularProgress.isHidden = false
+            self.progressRing.isHidden = false
             self.labelResendOTPTitle.text = "\(AppText.shared.resendOTPAvailableIn) \(self.timerCount) \(AppText.shared.s)"
+            
+            let progress:Float = Float(self.progressRing.progress + (1.0/60.0))
+            self.progressRing.setProgress(progress, animated: true)
             
         }else{
             self.invalidate_Timer60SecResendOTP()
             self.viewResendOTPButtonContainer.isHidden = false
-            self.viewCircularProgress.isHidden = true
+            self.progressRing.isHidden = true
             self.labelResendOTPTitle.text = "\(AppText.shared.resendOTPAvailable)"
+            self.progressRing.setProgress(0, animated: true)
+            
         }
     }
     

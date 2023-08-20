@@ -118,9 +118,9 @@ extension LoginViewC{
             return AppText.shared.enterPhoneNumber
         }
         
-        if Validations.shared.isValidPhone(phone: self.textFieldPhoneNumber.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? String()){
+       /* if Validations.shared.isValidPhone(phone: self.textFieldPhoneNumber.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? String()){
             return AppText.shared.enterValidPhoneNumber
-        }
+        } */
         return String()
     }
     

@@ -44,6 +44,8 @@ class AppText{
     internal let K_Red              :String           =       "K_Red"
     internal let k_BlueTint         :String           =       "K_BlueTint"
     internal let k_Gray             :String           =       "K_Gray"
+    internal let K_GrayLight        :String           =       "K_GrayLight"
+    
     
     
     

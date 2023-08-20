@@ -45,6 +45,8 @@
 		8DB408772A83733500913BD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DB408752A83733500913BD0 /* Main.storyboard */; };
 		8DB408792A83733600913BD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DB408782A83733600913BD0 /* Assets.xcassets */; };
 		8DB4087C2A83733600913BD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DB4087A2A83733600913BD0 /* LaunchScreen.storyboard */; };
+		8DD3ADC22A91F3F600EFD218 /* ALProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD3ADC12A91F3F600EFD218 /* ALProgressRing.swift */; };
+		8DD3ADC42A91F46800EFD218 /* ALTimingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD3ADC32A91F46800EFD218 /* ALTimingFunction.swift */; };
 		8DF9063B2A8E414B003020BD /* GlobalMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF9063A2A8E414B003020BD /* GlobalMethods.swift */; };
 		8DF9063D2A8E4F73003020BD /* OTPViewController+CustomMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF9063C2A8E4F73003020BD /* OTPViewController+CustomMethods.swift */; };
 		8DF906402A8E52C9003020BD /* VPMOTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF9063F2A8E52C9003020BD /* VPMOTPTextField.swift */; };
@@ -92,6 +94,8 @@
 		8DB408782A83733600913BD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DB4087B2A83733600913BD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DB4087D2A83733600913BD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DD3ADC12A91F3F600EFD218 /* ALProgressRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALProgressRing.swift; sourceTree = "<group>"; };
+		8DD3ADC32A91F46800EFD218 /* ALTimingFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALTimingFunction.swift; sourceTree = "<group>"; };
 		8DF9063A2A8E414B003020BD /* GlobalMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalMethods.swift; sourceTree = "<group>"; };
 		8DF9063C2A8E4F73003020BD /* OTPViewController+CustomMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OTPViewController+CustomMethods.swift"; sourceTree = "<group>"; };
 		8DF9063F2A8E52C9003020BD /* VPMOTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPMOTPTextField.swift; sourceTree = "<group>"; };
@@ -260,6 +264,7 @@
 		8DB408862A8373E100913BD0 /* ResourceFiles */ = {
 			isa = PBXGroup;
 			children = (
+				8DD3ADC02A91F3C800EFD218 /* ALProgressRing */,
 				8DF9063E2A8E52B7003020BD /* OTPViewHelper */,
 				8DF906392A8E412E003020BD /* GlobalMethods */,
 				8D795A1A2A89F01000B46B2A /* Validations */,
@@ -278,6 +283,15 @@
 				8DB408782A83733600913BD0 /* Assets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		8DD3ADC02A91F3C800EFD218 /* ALProgressRing */ = {
+			isa = PBXGroup;
+			children = (
+				8DD3ADC32A91F46800EFD218 /* ALTimingFunction.swift */,
+				8DD3ADC12A91F3F600EFD218 /* ALProgressRing.swift */,
+			);
+			path = ALProgressRing;
 			sourceTree = "<group>";
 		};
 		8DF906392A8E412E003020BD /* GlobalMethods */ = {
@@ -397,11 +411,13 @@
 			files = (
 				8D0495682A86739900D666F6 /* CountryDataModel.swift in Sources */,
 				8D823C762A862A0200E2A700 /* UIView+Extensions.swift in Sources */,
+				8DD3ADC22A91F3F600EFD218 /* ALProgressRing.swift in Sources */,
 				8DF9063B2A8E414B003020BD /* GlobalMethods.swift in Sources */,
 				8D2095102A8A133500E1717A /* OTPViewController.swift in Sources */,
 				8D3659B92A85FFBE00584297 /* LoginViewC+CustomMethods.swift in Sources */,
 				8DB408742A83733500913BD0 /* ViewController.swift in Sources */,
 				8D3659E32A86049400584297 /* AppText.swift in Sources */,
+				8DD3ADC42A91F46800EFD218 /* ALTimingFunction.swift in Sources */,
 				8DB408702A83733500913BD0 /* AppDelegate.swift in Sources */,
 				8D3659B72A85FF6700584297 /* LoginViewC.swift in Sources */,
 				8D0495622A866C4000D666F6 /* ToolbarPickerView.swift in Sources */,
